@@ -19,5 +19,10 @@ public class PlayerAnimatorManager : MonoBehaviour {
 
         anim.SetFloat("Speed", h * h + v * v);
 
+
+        if(Input.GetMouseButtonDown(0))
+        {
+            anim.SetTrigger("Attack");
+        }
 	}
 }
